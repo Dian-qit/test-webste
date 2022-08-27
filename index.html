@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HlWebsite</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="main">
+    <nav>
+    <img src="/logo.jpeg" class="logo">
+    <ul>
+      <li><a href="#">Features</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+      <li onclick="toggleMenu()">Menu</li>
+    </ul>
+
+    <div class="sub-menu-wrap" id="subMenu">
+      <div class="sub-menu">
+        <div class="menu-info">
+          <img src="/logo.jpeg">
+          <h2>Menu</h2>
+        </div>
+        <hr>
+        
+        <a href="#" class="sub-menu-link">
+          <p>Edit Profile</p>
+          <span>></span>
+        </a>
+        
+        <a href="#" class="sub-menu-link">
+          <p>Settings & Privacy</p>
+          <span>></span>
+        </a>
+        
+        <a href="#" class="sub-menu-link">
+          <p>Help & Support</p>
+          <span>></span>
+        </a>
+        
+        <a href="#" class="sub-menu-link">
+          <p>Display & Accessibility</p>
+          <span>></span>
+        </a>
+        
+        <a href="#" class="sub-menu-link">
+          <p>Log out</p>
+          <span>></span>
+        </a>
+        
+      </div>
+    </div>
+    </nav>
+  </div>
+  <!-- Project -->
+  <script>
+    let subMenu = document.getElementById("subMenu");
+    
+    function toggleMenu(){
+      subMenu.classList.toggle("open-menu");
+    }
+  </script>
+</body>
+</html>
